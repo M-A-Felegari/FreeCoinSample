@@ -1,6 +1,6 @@
 @import './variables';
 @import './general';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');//font awsom
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');//font poppins
 
 *{
     margin: 0;
@@ -21,4 +21,53 @@ body{
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
     background-color: $color-background;
+    overflow-x: hidden;
+}
+.grid-container{
+    display: grid;
+    width: 96%;
+    height: 100%;
+    margin:0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 18rem auto 23rem;
+    aside{
+        width: 100%;
+        height: 100%;
+        background-color: $color-light;
+        .top{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            .logo{
+                display: flex;
+            }
+            img{
+                width: 2.7rem;
+                margin-right: 5px;
+            }
+            >span{
+                display: none;
+            }
+        }
+        .sidebar{
+            >a{
+                display: flex;
+                align-items: center;
+                margin-left: 2rem;
+                margin-top: 3rem;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    margin-left: 3rem;
+                }
+                &.active{
+                }
+            }
+            >a:last-child{
+                position: absolute;
+                bottom: 3.5rem;
+            }
+        }
+    }
 }

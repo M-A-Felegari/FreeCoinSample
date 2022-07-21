@@ -8,6 +8,66 @@ img {
   width: 100%;
 }
 
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #677483;
+}
+
+span.bold {
+  color: #363949;
+}
+
+.primary {
+  color: #7380ec;
+}
+
+.danger {
+  color: #ff7782;
+}
+
+.success {
+  color: #41f1b6;
+}
+
+.warning {
+  color: #ffbb55;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,4 +89,50 @@ body {
   font-family: poppins, sans-serif;
   font-size: 0.88rem;
   background-color: #f6f6f9;
+  overflow-x: hidden;
+}
+
+.grid-container {
+  display: grid;
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 18rem auto 23rem;
+}
+.grid-container aside {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(132, 139, 200, 0.18);
+}
+.grid-container aside .top {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.grid-container aside .top .logo {
+  display: flex;
+}
+.grid-container aside .top img {
+  width: 2.7rem;
+  margin-right: 5px;
+}
+.grid-container aside .top > span {
+  display: none;
+}
+.grid-container aside .sidebar > a {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+.grid-container aside .sidebar > a:hover {
+  margin-left: 3rem;
+}
+.grid-container aside .sidebar > a:last-child {
+  position: absolute;
+  bottom: 3.5rem;
 }/*# sourceMappingURL=style.css.map */
