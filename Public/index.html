@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="grid-container">
+        <!-- left side bar -->
         <aside>
             <div class="top">
                 <div class="logo">
@@ -29,8 +30,8 @@
                     <h2>limited</h2>
                 </a>
                 <a href="#" class="aside-item">
-                    <span class="material-symbols-sharp">grid_view</span>
-                    <h2>Missions</h2>
+                    <span class="material-symbols-sharp">task_alt</span>
+                    <h2>Tasks</h2>
                 </a>
                 <a href="#" class="aside-item">
                     <span class="material-symbols-sharp">cloudy_snowing</span>
@@ -41,11 +42,83 @@
                     <h2>History</h2>
                 </a>
                 <a href="#" class="aside-item">
-                    <span class="material-symbols-sharp">wallet</span>
-                    <h2>wallet</h2>
+                    <span class="material-symbols-sharp">Account_circle</span>
+                    <h2>Account</h2>
                 </a>
             </div>
         </aside>
+        <!-- end left side bar -->
+        <!-- main content -->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="progrss-cards-container">
+                <!-- card for show level of user -->
+                <div class="card lvl-card">
+                    <div class="top">
+                        <span class="material-symbols-sharp">
+                            stars
+                        </span>
+                    </div>     
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Your XP</h3>
+                            <h1>78XP</h1>
+                        </div>
+                        <div class="right">
+                            <svg height="100" width="100">
+                                <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="55.22" fill="none" />
+                            </svg>
+                            <span>78%</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="muted-text">12XP need</div>
+                    </div>
+                </div>
+                <!-- card for show Tasks completed -->
+                <div class="card limited-card">
+                    <div class="top">
+                        <span class="material-symbols-sharp">task_alt</span>
+                    </div>     
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Daily Limited</h3>
+                            <h1>Completed</h1>
+                        </div>
+                        <div class="right">
+                            <svg height="100" width="100">
+                                <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="0" fill="none" />
+                            </svg>
+                            <span>100%</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="muted-text">0 left</div>
+                    </div>
+                </div>
+                <!-- card for show limited completed -->
+                <div class="card tasks-card">
+                    <div class="top">
+                        <span class="material-symbols-sharp">water_drop</span>
+                    </div>     
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Tasks Completed</h3>
+                            <h1>3</h1>
+                        </div>
+                        <div class="right">
+                            <svg height="100" width="100">
+                                <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="100.4" fill="none" />
+                            </svg>
+                            <span>60%</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="muted-text">2 left</div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
