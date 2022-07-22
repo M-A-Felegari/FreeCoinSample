@@ -180,6 +180,15 @@ body {
 .grid-container main .progrss-cards-container .card .middle .right span {
   position: absolute;
 }
+.grid-container main .progrss-cards-container .card .middle .right svg {
+  height: 6.8rem;
+  width: 6.8rem;
+}
+.grid-container main .progrss-cards-container .card .middle .right svg circle {
+  stroke: #7380ec;
+  stroke-width: 0.8rem;
+  fill: none;
+}
 .grid-container main .progrss-cards-container .card:hover {
   box-shadow: none;
 }
@@ -191,4 +200,48 @@ body {
 }
 .grid-container main .progrss-cards-container .card.tasks-card .top span {
   background-color: #41f1b6;
+}
+.grid-container main .show-tasks {
+  margin-top: 3rem;
+}
+.grid-container main .show-tasks table {
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  padding: 1.8rem;
+  width: 100%;
+  text-align: center;
+}
+.grid-container main .show-tasks table tbody tr td {
+  color: #677483;
+  padding: 1rem 0;
+  border-bottom: 3px solid #f6f6f9;
+}
+.grid-container main .show-tasks table tbody tr td#taskState-undone {
+  color: #ffbb55;
+}
+.grid-container main .show-tasks table tbody tr td#taskState-done {
+  color: #41f1b6;
+}
+.grid-container main .show-tasks table tbody tr td a {
+  transition: all 0.5s;
+  font-weight: 800;
+}
+.grid-container main .show-tasks table tbody tr td a:hover {
+  color: #363949;
+}
+.grid-container main .show-tasks table tbody tr:last-child td {
+  border-bottom: none;
+}
+.grid-container main .show-tasks .bottom {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.grid-container main .show-tasks .bottom a {
+  transition: all 0.5s;
+}
+.grid-container main .show-tasks .bottom a:hover {
+  color: #7380ec;
 }/*# sourceMappingURL=style.css.map */

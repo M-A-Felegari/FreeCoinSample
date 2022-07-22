@@ -112,6 +112,16 @@ body{
                         span{
                             position: absolute;
                         }
+                        //svg progressbar style
+                        svg{
+                            height: 6.8rem;
+                            width: 6.8rem;
+                            circle{
+                                stroke: $color-primary;
+                                stroke-width:0.8rem; 
+                                fill:none;
+                            }
+                        }
                     }
                 }
                 &:hover{
@@ -135,6 +145,55 @@ body{
                 }
             }
             /////////////////////End diffrent style for each card (change logo bg color)
+        }
+        /// style show tasks table
+        .show-tasks{
+            margin-top: 3*$top-margin;
+            table{
+                margin-top: $top-margin;
+                background-color: $color-white;
+                border-radius: $card-border-readius;
+                box-shadow: $box-shadow;
+                padding: $card-padding;
+                width: 100%;
+                text-align: center;
+                tbody{
+                    tr{
+                        td{
+                            color: $color-dark-variant;
+                            padding: 1rem 0;
+                            border-bottom: 3px solid $color-background;
+                            &#taskState-undone{
+                                color: $color-warning;
+                            }
+                            &#taskState-done{
+                                color: $color-success;
+                            }
+                            a{
+                                transition: all 0.5s;
+                                font-weight: 800;
+                                &:hover{
+                                    color: $color-dark;
+                                }
+                            }
+                        }
+                        &:last-child td{
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+            .bottom{
+                margin-top: $top-margin;
+                text-align: center;
+                font-size: 1.5rem;
+                a{
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $color-primary;
+                    }
+                }
+            }
         }
     }
 }
