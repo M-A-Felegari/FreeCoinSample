@@ -52,3 +52,18 @@ span.bold{
 .warning{
     color: $color-warning;
 }
+.text-link{
+    color: $color-primary;
+    transition: all 0.5s;
+    font-weight: 900;
+    &:hover{
+        color: $color-dark;
+    }
+}
+.big-link{
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    &:hover{
+        color: $color-primary;
+    }
+}

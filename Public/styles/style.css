@@ -68,6 +68,23 @@ span.bold {
   color: #ffbb55;
 }
 
+.text-link {
+  color: #7380ec;
+  transition: all 0.5s;
+  font-weight: 900;
+}
+.text-link:hover {
+  color: #363949;
+}
+
+.big-link {
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+.big-link:hover {
+  color: #7380ec;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -224,24 +241,82 @@ body {
 .grid-container main .show-tasks table tbody tr td#taskState-done {
   color: #41f1b6;
 }
-.grid-container main .show-tasks table tbody tr td a {
-  transition: all 0.5s;
-  font-weight: 800;
-}
-.grid-container main .show-tasks table tbody tr td a:hover {
-  color: #363949;
-}
 .grid-container main .show-tasks table tbody tr:last-child td {
   border-bottom: none;
 }
 .grid-container main .show-tasks .bottom {
   margin-top: 1rem;
   text-align: center;
-  font-size: 1.5rem;
 }
-.grid-container main .show-tasks .bottom a {
+.grid-container .right-sidebar {
+  margin-top: 1rem;
+}
+.grid-container .right-sidebar .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid-container .right-sidebar .top #right-menu-btn {
+  display: none;
+}
+.grid-container .right-sidebar .top .theme-toggler {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: rgba(132, 139, 200, 0.18);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.grid-container .right-sidebar .top .theme-toggler .active {
+  background-color: #7380ec;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+.grid-container .right-sidebar .top .user-information {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.grid-container .right-sidebar .top .user-information .right span {
+  font-size: xx-large;
+}
+.grid-container .right-sidebar .recent-exchanges {
+  margin-top: 1rem;
+}
+.grid-container .right-sidebar .recent-exchanges .exchanges-box {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1.8rem;
+}
+.grid-container .right-sidebar .recent-exchanges .exchanges-box .exchange-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.grid-container .right-sidebar .best-airdrops {
+  margin-top: 2rem;
+}
+.grid-container .right-sidebar .best-airdrops .best-airdrops-box {
+  margin-top: 1rem;
+}
+.grid-container .right-sidebar .best-airdrops .best-airdrops-box .airdrop-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
   transition: all 0.5s;
 }
-.grid-container main .show-tasks .bottom a:hover {
-  color: #7380ec;
+.grid-container .right-sidebar .best-airdrops .best-airdrops-box .airdrop-info:hover {
+  box-shadow: none;
+}
+.grid-container .right-sidebar .best-airdrops .bottom {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
