@@ -146,7 +146,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .grid-container aside .sidebar > a:hover {
-  margin-left: 3rem;
+  transform: translateX(3rem);
   color: #7380ec;
 }
 .grid-container aside .sidebar > a.active {
@@ -314,9 +314,51 @@ body {
   box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
   transition: all 0.5s;
 }
+.grid-container .right-sidebar .best-airdrops .best-airdrops-box .airdrop-info #holders-number {
+  position: relative;
+}
+.grid-container .right-sidebar .best-airdrops .best-airdrops-box .airdrop-info #holders-number > span {
+  position: absolute;
+  font-size: large;
+}
 .grid-container .right-sidebar .best-airdrops .best-airdrops-box .airdrop-info:hover {
   box-shadow: none;
 }
 .grid-container .right-sidebar .best-airdrops .bottom {
   text-align: center;
+}
+
+@media screen and (max-width: 1450px) {
+  .grid-container {
+    grid-template-columns: 5rem auto 21rem;
+  }
+  .grid-container aside .top {
+    display: none;
+  }
+  .grid-container aside .sidebar {
+    margin-top: 1rem;
+  }
+  .grid-container aside .sidebar a h2 {
+    display: none;
+  }
+  .grid-container aside .sidebar a:hover {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .grid-container aside .sidebar {
+    position: fixed;
+  }
+  .grid-container aside .sidebar a:last-child {
+    position: static;
+  }
+  .grid-container main .progrss-cards-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-container main .show-tasks table thead th:first-child {
+    display: none;
+  }
+  .grid-container main .show-tasks table tbody td:first-child {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
