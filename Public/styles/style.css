@@ -361,4 +361,25 @@ body {
   .grid-container main .show-tasks table tbody td:first-child {
     display: none;
   }
+}
+@media screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-container aside {
+    transform: translateX(-100%);
+  }
+  .grid-container .right-sidebar .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0rem 1px 10px rgba(132, 139, 200, 0.18);
+  }
+  .grid-container .right-sidebar .top #right-menu-btn {
+    display: inline-block;
+    background-color: transparent;
+  }
 }/*# sourceMappingURL=style.css.map */
