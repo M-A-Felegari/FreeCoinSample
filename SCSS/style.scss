@@ -59,7 +59,7 @@ body{
                 height: 3.7rem;
                 transition: all 0.5s ease-in-out;
                 &:hover{
-                    margin-left: 3rem;
+                    transform: translateX(3rem);
                     color: $color-primary;
                 }
                 &.active{
@@ -247,6 +247,13 @@ body{
                     border-radius: $border-radius2;
                     box-shadow: $box-shadow;
                     transition: all 0.5s;
+                    #holders-number{
+                        position: relative;
+                        >span{ //style icon
+                            position: absolute;
+                            font-size: large;
+                        }
+                    }
                     &:hover{
                         box-shadow: none;
                     }
@@ -258,4 +265,89 @@ body{
         }
     }
     /////////////////////////////end right sidebar
+}
+
+
+/////////////////////////// start responsiving
+@media screen and (max-width: 1450px){
+    .grid-container{
+        grid-template-columns: 5rem auto 21rem;
+        aside{
+            .top{
+                display: none;
+            }
+            .sidebar{
+                margin-top: $top-margin;
+                a{
+                    h2{
+                        display: none;
+                    }
+                    &:hover{
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .grid-container{
+        // grid-template-columns: 15rem auto 23rem;
+        aside{
+            .sidebar{
+                position: fixed;
+                a{
+                    &:last-child{
+                        position: static;
+                    }
+                }
+            }
+        }
+        main{
+            .progrss-cards-container{
+                grid-template-columns: 1fr;
+            }
+            .show-tasks{
+                table{
+                    thead{
+                        th{
+                            &:first-child{
+                                display: none;
+                            }
+                        }
+                    }
+                    tbody{
+                        td{
+                            &:first-child{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        aside{
+            transform: translateX(-100%);
+        }
+        .right-sidebar{
+            .top{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width:100%;
+                justify-content: space-between;
+                background-color: $color-white;
+                box-shadow: 0rem 1px 10px $color-light;
+                #right-menu-btn{
+                    display: inline-block;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 }
